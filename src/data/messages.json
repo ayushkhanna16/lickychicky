@@ -1,0 +1,58 @@
+{
+  "months": {
+    "month-1": {
+      "photos": [
+        { "id": "p1", "url": "/memories/month1-1.jpg", "caption": "Our first day" }
+      ],
+      "videos": [
+        { "id": "v1", "url": "/memories/month1-video.mp4", "caption": "First adventure" }
+      ],
+      "voiceNotes": [
+        { "id": "vn1", "url": "/memories/month1-voice.mp3", "caption": "A message for you" }
+      ],
+      "texts": [
+        { "id": "t1", "text": "The day we met, everything changed. Here's to many more months together.", "date": "Month 1" }
+      ]
+    },
+    "month-2": {
+      "photos": [],
+      "videos": [],
+      "voiceNotes": [],
+      "texts": [
+        { "id": "t1", "text": "Month 2: Our first adventures. Every moment with you feels like a scene from a movie.", "date": "Month 2" }
+      ]
+    },
+    "month-3": {
+      "photos": [],
+      "videos": [],
+      "voiceNotes": [],
+      "texts": [
+        { "id": "t1", "text": "Growing closer every day. You're my favourite person to do nothing with.", "date": "Month 3" }
+      ]
+    },
+    "month-4": {
+      "photos": [],
+      "videos": [],
+      "voiceNotes": [],
+      "texts": [
+        { "id": "t1", "text": "Shared moments, shared dreams. Four months of us.", "date": "Month 4" }
+      ]
+    },
+    "month-5": {
+      "photos": [],
+      "videos": [],
+      "voiceNotes": [],
+      "texts": [
+        { "id": "t1", "text": "Halfway to a year. It feels like we've always been.", "date": "Month 5" }
+      ]
+    },
+    "month-6": {
+      "photos": [],
+      "videos": [],
+      "voiceNotes": [],
+      "texts": [
+        { "id": "t1", "text": "Six months of us. Here's to forever.", "date": "Month 6" }
+      ]
+    }
+  }
+}

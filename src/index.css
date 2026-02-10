@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sunset-start: #ff7e5f;
+  --sunset-mid: #feb47b;
+  --sunset-warm: #ffd89b;
+  --dusk: #2d1b4e;
+  --sand: #f5e6d3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Cinematic letterbox / aspect ratio feel */
+.cinematic-frame {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Warm gradient overlay for beach/sunset */
+.bg-sunset-sky {
+  background: linear-gradient(
+    180deg,
+    #ff7e5f 0%,
+    #feb47b 20%,
+    #ffd89b 45%,
+    #87CEEB 70%,
+    #2d1b4e 100%
+  );
+  background-attachment: fixed;
+}
+
+/* Beach sunset: pink, orange, purple */
+.bg-beach-sunset {
+  background: linear-gradient(
+    180deg,
+    #ff9a9e 0%,
+    #fecfef 15%,
+    #ffecd2 30%,
+    #fcb69f 50%,
+    #ff9a9e 65%,
+    #a18cd1 85%,
+    #5b4a8c 100%
+  );
+  background-attachment: fixed;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
