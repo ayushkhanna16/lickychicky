@@ -40,7 +40,7 @@ export default function Room() {
   }
 
   return (
-    <div className="min-h-screen bg-sunset-sky px-4 py-12 md:py-20">
+    <div className="min-h-screen bg-gradient-to-br from-pink-400 via-orange-300 to-purple-400 px-4 py-12 md:py-20">
       <div className="max-w-xl mx-auto">
         <motion.button
           onClick={() => navigate('/rooms')}

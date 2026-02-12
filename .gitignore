@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Media (keep local / use LFS if needed)
+public/media/
+public/pallavi-anniversary/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

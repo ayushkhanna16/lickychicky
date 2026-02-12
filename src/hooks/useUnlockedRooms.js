@@ -1,28 +1,27 @@
 import { useState, useEffect } from 'react'
 
-const STORAGE_KEY = 'anniversary-unlocked-rooms'
+const STORAGE_KEY = 'unlocked-months'
 
 export function useUnlockedRooms() {
   const [unlocked, setUnlocked] = useState(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY)
-      return stored ? JSON.parse(stored) : []
-    } catch {
-      return []
-    }
+    const saved = localStorage.getItem(STORAGE_KEY)
+    return saved ? JSON.parse(saved) : []
   })
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(unlocked))
   }, [unlocked])
 
-  const unlock = (roomId) => {
-    if (!unlocked.includes(roomId)) {
-      setUnlocked((prev) => [...prev, roomId])
-    }
+  const unlock = (monthId) => {
+    setUnlocked(prev => prev.includes(monthId) ? prev : [...prev, monthId])
   }
 
-  const isUnlocked = (roomId) => unlocked.includes(roomId)
+  const isUnlocked = (monthId) => unlocked.includes(monthId)
 
-  return { unlocked, unlock, isUnlocked }
+  const reset = () => {
+    setUnlocked([])
+    localStorage.removeItem(STORAGE_KEY)
+  }
+
+  return { unlocked, unlock, isUnlocked, reset }
 }

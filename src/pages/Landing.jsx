@@ -1,9 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-// Placeholder – replace with your names and date
-const NAMES = 'Your Name & Partner Name'
-const ANNIVERSARY_DATE = 'Month Day, Year'
+const NAMES = 'Ayush & Pallavi'
+const ANNIVERSARY_DATE = 'August 2025 - February 2026'
 
 const HEARTS = ['❤️', '💕', '💗', '💖', '💝', '🤍', '❤️', '💕']
 const MUSIC_NOTES = ['♪', '♫', '♬', '♪', '♫', '♬', '♪', '♫']
@@ -25,7 +24,7 @@ export default function Landing() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-beach-sunset relative overflow-hidden cinematic-frame">
+    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-orange-300 relative overflow-hidden cinematic-frame">
       {/* Bollywood-style cinematic letterbox bars */}
       <motion.div
         className="absolute top-0 left-0 right-0 h-16 bg-black/80 z-20"
