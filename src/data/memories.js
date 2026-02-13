@@ -49,7 +49,16 @@ export function getMemoriesForMonth(monthId) {
       ]
     },
     month4: {
-      photos: [],
+      photos: [
+        { id: 'p4-1', url: `${BASE}/month4/photos/1EC8E4CE-D2F5-4033-805D-AF3FC1BB13CB_4_5005_c.jpeg`, caption: '' },
+        { id: 'p4-2', url: `${BASE}/month4/photos/6557DB02-968A-42BF-9568-63482BFB7A58_1_102_o.jpeg`, caption: '' },
+        { id: 'p4-3', url: `${BASE}/month4/photos/B1913C78-6DFB-46B8-A06B-67E0C2B674AF_1_102_o.jpeg`, caption: '' },
+        { id: 'p4-4', url: `${BASE}/month4/photos/BC111C3F-3A99-4908-88A6-3BA2C0605009_1_102_o.jpeg`, caption: '' },
+        { id: 'p4-5', url: `${BASE}/month4/photos/BC82A2C9-F23F-4F2E-A0FD-28B8EA7EA58A_1_102_a.jpeg`, caption: '' },
+        { id: 'p4-6', url: `${BASE}/month4/photos/C3D49CA7-D5C7-4B81-846F-9492771B270D_4_5005_c.jpeg`, caption: '' },
+        { id: 'p4-7', url: `${BASE}/month4/photos/E474989D-42AF-49DD-9815-E64631716B4B_4_5005_c.jpeg`, caption: '' },
+        { id: 'p4-8', url: `${BASE}/month4/photos/FBD55952-31B4-4EF7-AD89-309C99ED962B_4_5005_c.jpeg`, caption: '' },
+      ],
       videos: [],
       voiceNotes: [],
       texts: [
@@ -57,7 +66,12 @@ export function getMemoriesForMonth(monthId) {
       ]
     },
     month5: {
-      photos: [],
+      photos: [
+        { id: 'p5-1', url: `${BASE}/month5/photos/01D1E4B8-0E88-4873-A9B0-F619BE2996AC_1_105_c.jpeg`, caption: '' },
+        { id: 'p5-2', url: `${BASE}/month5/photos/6871AEE4-9103-4E81-9E19-F1730846C9BC_1_105_c.jpeg`, caption: '' },
+        { id: 'p5-3', url: `${BASE}/month5/photos/AF34050B-06F9-4208-B2BB-C275B7B2BA57_1_105_c.jpeg`, caption: '' },
+        { id: 'p5-4', url: `${BASE}/month5/photos/F699092A-C687-44DF-9F52-32D135C33326_1_105_c.jpeg`, caption: '' },
+      ],
       videos: [],
       voiceNotes: [],
       texts: [

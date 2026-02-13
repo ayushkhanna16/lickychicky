@@ -1,0 +1,16 @@
+COUPLE PHOTO AS FAVICON
+======================
+
+To use a photo of you and your girlfriend as the site favicon (the small icon in the browser tab):
+
+1. Choose a clear photo of the two of you (square or nearly square works best).
+
+2. Save it in this folder (public/) with one of these names:
+   - couple-photo.jpg
+   - couple-photo.png
+
+3. The site is already set to use it. If both files exist, the .jpg is used first.
+
+4. Restart or refresh the dev server (npm run dev) after adding the file.
+
+Recommended: Use a square crop (e.g. 512×512 or 256×256) so it looks good as a small icon.

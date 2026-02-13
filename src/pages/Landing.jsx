@@ -117,6 +117,14 @@ export default function Landing() {
           transition={{ duration: 1, delay: 0.4 }}
         >
           {/* Bollywood-style fade-in entrance */}
+          <motion.p
+            className="font-cinematic text-white/95 text-xl md:text-2xl mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+          >
+            Happy Valentine's Day, My Love
+          </motion.p>
           <motion.h1
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white drop-shadow-lg mb-2 flex flex-wrap items-center justify-center gap-2 sm:gap-3"
             initial={{ opacity: 0, y: 40, scale: 0.9 }}

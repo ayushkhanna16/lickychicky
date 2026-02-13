@@ -3,67 +3,67 @@ export const ROOMS = [
     id: 'month1',
     month: 1,
     title: 'August 2025',
-    subtitle: 'Walk 500 Miles to You',
-    riddle: 'In which SRK movie does he famously spread his arms wide and say "I love you, Simran"?',
-    answer: 'ddlj',
-    hint: 'The train scene... the mustard fields... the most iconic Bollywood romance',
-    srkQuote: 'Bade bade deshon mein aisi choti choti baatein hoti rehti hain',
-    adminAnswer: 'DDLJ (Dilwale Dulhania Le Jayenge)'
+    subtitle: 'Walk 500 Miles With You',
+    riddle: 'Who was the opponent when I said I love you at the 49ers game?',
+    answer: 'broncos',
+    hint: 'An AFC West team the 49ers faced.',
+    srkQuote: '',
+    adminAnswer: 'Broncos'
   },
   {
     id: 'month2',
     month: 2,
     title: 'September 2025',
     subtitle: 'Santa Clause Barbara Brought You to Me',
-    riddle: 'What does SRK famously say happens when you truly love someone, according to Kuch Kuch Hota Hai?',
-    answer: 'duniya',
-    hint: 'Think about how the whole world changes for you',
-    srkQuote: 'Pyaar dosti hai... Love is friendship',
-    adminAnswer: 'duniya (Full quote: Pyaar kiya to darna kya / Puri duniya badal jaati hai)'
+    riddle: 'Who swam farther in Santa Barbara - You or Me?',
+    answer: 'me',
+    hint: 'Think about who did more laps or distance in the water.',
+    srkQuote: '',
+    adminAnswer: 'Me'
   },
   {
     id: 'month3',
     month: 3,
     title: 'October 2025',
     subtitle: 'Mountains and Valleys, and Oceans Apart',
-    riddle: "In which SRK movie does he travel across Europe searching for his lost love's engagement ring?",
-    answer: 'harry',
-    hint: "He's a tour guide, she's looking for her ring. Mini trails and big adventures!",
-    srkQuote: 'Safar khoobsurat hai manzil se bhi',
-    adminAnswer: 'Harry (Jab Harry Met Sejal - accept either "harry" or "sejal")'
+    riddle: 'What did we do in the Park on your last day in the US?',
+    answer: 'talk',
+    hint: 'We sat and shared words.',
+    srkQuote: '',
+    adminAnswer: 'Talk'
   },
   {
     id: 'month4',
     month: 4,
     title: 'November 2025',
     subtitle: 'Delhi ke Dillwale',
-    riddle: "What is the name of SRK's character in Chak De India who coaches the Indian women's hockey team?",
-    answer: 'kabir',
-    hint: 'His full name is Kabir Khan',
-    srkQuote: 'Sattar minute. Bahatar minute tumhare paas hain. Mujhe sirf is baare mein socho',
-    adminAnswer: 'Kabir (Kabir Khan from Chak De India)'
+    riddle: 'Which cycle does Nagendra ride? JK. Where did we drink coffee in our 15 minute meetup?',
+    answer: 'paul',
+    hint: 'A French bakery/café name.',
+    srkQuote: '',
+    adminAnswer: 'PAUL'
   },
   {
     id: 'month5',
     month: 5,
     title: 'December 2025',
-    subtitle: 'Living a Week-Long Dream',
-    riddle: 'Which SRK spy movie brought him back to action cinema after a long break in 2023?',
-    answer: 'pathaan',
-    hint: 'He plays a RAW agent alongside Deepika Padukone',
-    srkQuote: 'Jhooti kasam khuda ki, desh se zyada kuch nahi',
-    adminAnswer: 'Pathaan'
+    subtitle: 'Living the Dream, for a Week',
+    riddle: "What was your first meal in the US upon landing?",
+    answer: 'taco bell',
+    hint: 'A fast-food chain known for tacos and burritos.',
+    srkQuote: '',
+    adminAnswer: 'Taco Bell'
   },
   {
     id: 'month6',
     month: 6,
     title: 'January 2026',
     subtitle: 'Being Part of the Family',
-    riddle: "What word does SRK repeat three times in the famous DDLJ scene where he convinces Simran's father to let her go?",
-    answer: 'jaa',
-    hint: 'He tells Simran to leave and live her life',
-    srkQuote: 'Ja Simran ja, jee le apni zindagi',
-    adminAnswer: 'Jaa (from "Ja Simran ja, jee le apni zindagi")'
+    riddle: "What's our favorite convertible?",
+    answer: 'mustang',
+    hint: 'An American muscle car, often with a galloping horse logo.',
+    srkQuote: '',
+    adminAnswer: 'Mustang'
   }
 ]
 

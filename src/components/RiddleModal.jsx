@@ -85,10 +85,15 @@ export function RiddleModal({ monthId, onClose, onUnlocked }) {
                 className="text-center"
               >
                 <p className="text-2xl mb-2">🎉 Unlocked!</p>
-                <p className="font-display text-amber-200/95 text-lg italic mb-6">
-                  &ldquo;{room.srkQuote}&rdquo;
-                </p>
-                <p className="text-stone-400 text-sm mb-6">— SRK</p>
+                {room.srkQuote && (
+                  <>
+                    <p className="font-display text-amber-200/95 text-lg italic mb-6">
+                      &ldquo;{room.srkQuote}&rdquo;
+                    </p>
+                    <p className="text-stone-400 text-sm mb-6">— SRK</p>
+                  </>
+                )}
+                {!room.srkQuote && <div className="mb-6" />}
                 <motion.button
                   onClick={handleCloseAfterSuccess}
                   className="px-6 py-3 rounded-full bg-amber-500 hover:bg-amber-400 text-stone-900 font-semibold"
