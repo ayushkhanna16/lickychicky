@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { getRoomById } from '../data/riddles'
 import { useUnlockedRooms } from '../hooks/useUnlockedRooms'
 import { Confetti } from './Confetti'
+import { getSRKQuote } from '../data/srkQuotes'
 
 export function RiddleModal({ monthId, onClose, onUnlocked }) {
   const room = getRoomById(monthId)
@@ -59,7 +60,7 @@ export function RiddleModal({ monthId, onClose, onUnlocked }) {
         <motion.div
           ref={modalRef}
           key={shake}
-          className="bg-stone-900/95 backdrop-blur border border-stone-600 rounded-2xl shadow-2xl max-w-md w-full p-6 md:p-8"
+          className="bg-stone-900/95 backdrop-blur border border-stone-600 rounded-2xl shadow-2xl max-w-2xl w-full p-6 md:p-8"
           initial={{ scale: 0.9, opacity: 0, x: 0 }}
           animate={{
             scale: 1,
@@ -84,16 +85,41 @@ export function RiddleModal({ monthId, onClose, onUnlocked }) {
                 exit={{ opacity: 0 }}
                 className="text-center"
               >
-                <p className="text-2xl mb-2">🎉 Unlocked!</p>
-                {room.srkQuote && (
-                  <>
-                    <p className="font-display text-amber-200/95 text-lg italic mb-6">
-                      &ldquo;{room.srkQuote}&rdquo;
-                    </p>
-                    <p className="text-stone-400 text-sm mb-6">— SRK</p>
-                  </>
-                )}
-                {!room.srkQuote && <div className="mb-6" />}
+                <p className="text-2xl mb-4">🎉 Unlocked!</p>
+                {(() => {
+                  const srkQuote = getSRKQuote(room.id)
+                  if (srkQuote) {
+                    return (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="mb-6"
+                      >
+                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl max-w-full">
+                          <img
+                            src={srkQuote.imageUrl}
+                            alt={`SRK Quote from ${srkQuote.movie}`}
+                            className="w-full h-auto object-cover max-h-96"
+                            onError={(e) => {
+                              e.target.onerror = null
+                              e.target.style.display = 'none'
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent flex flex-col justify-end p-4 md:p-6">
+                            <p className="text-amber-200/95 text-base md:text-lg italic font-cinematic leading-relaxed mb-2">
+                              &ldquo;{srkQuote.quote}&rdquo;
+                            </p>
+                            <p className="text-amber-300/80 text-xs md:text-sm">
+                              — {srkQuote.movie}
+                            </p>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )
+                  }
+                  return null
+                })()}
                 <motion.button
                   onClick={handleCloseAfterSuccess}
                   className="px-6 py-3 rounded-full bg-amber-500 hover:bg-amber-400 text-stone-900 font-semibold"
