@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getRoomById } from '../data/riddles'
 import { useUnlockedRooms } from '../hooks/useUnlockedRooms'
+import { getSRKQuote } from '../data/srkQuotes'
 
 export default function Room() {
   const { monthId } = useParams()
@@ -68,13 +69,44 @@ export default function Room() {
                 exit={{ opacity: 0 }}
                 className="mt-8"
               >
-                <p className="text-stone-200 text-lg">
+                <p className="text-stone-200 text-lg mb-6">
                   You unlocked this room! 🎉 Here&apos;s to month {room.month} and
                   many more.
                 </p>
-                <p className="text-stone-400 mt-4 italic">
-                  &ldquo;{room.riddle}&rdquo;
-                </p>
+                {(() => {
+                  const srkQuote = getSRKQuote(room.id)
+                  if (srkQuote) {
+                    return (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="mt-6"
+                      >
+                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl">
+                          <img
+                            src={srkQuote.imageUrl}
+                            alt={`SRK Quote from ${srkQuote.movie}`}
+                            className="w-full h-auto object-cover"
+                            onError={(e) => {
+                              e.target.onerror = null
+                              e.target.style.display = 'none'
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6">
+                            <p className="text-amber-200/95 text-lg md:text-xl italic font-cinematic leading-relaxed mb-2">
+                              &ldquo;{srkQuote.quote}&rdquo;
+                            </p>
+                            <p className="text-amber-300/80 text-sm">
+                              — {srkQuote.movie}
+                            </p>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )
+                  }
+                  return null
+                })()}
               </motion.div>
             ) : (
               <motion.div

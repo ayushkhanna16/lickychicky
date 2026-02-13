@@ -12,9 +12,7 @@ export function getMemoriesForMonth(monthId) {
       ],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't1-1', text: 'August 2025 — Where it all began.', date: 'August 2025' },
-      ]
+      texts: []
     },
     month2: {
       photos: [
@@ -29,9 +27,7 @@ export function getMemoriesForMonth(monthId) {
       ],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't2-1', text: 'September 2025 — Growing together.', date: 'September 2025' },
-      ]
+      texts: []
     },
     month3: {
       photos: [
@@ -44,9 +40,7 @@ export function getMemoriesForMonth(monthId) {
       ],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't3-1', text: 'October 2025 — Adventures begin.', date: 'October 2025' },
-      ]
+      texts: []
     },
     month4: {
       photos: [
@@ -61,9 +55,7 @@ export function getMemoriesForMonth(monthId) {
       ],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't4-1', text: 'November 2025 — Making memories.', date: 'November 2025' },
-      ]
+      texts: []
     },
     month5: {
       photos: [
@@ -74,17 +66,13 @@ export function getMemoriesForMonth(monthId) {
       ],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't5-1', text: 'December 2025 — New beginnings.', date: 'December 2025' },
-      ]
+      texts: []
     },
     month6: {
       photos: [],
       videos: [],
       voiceNotes: [],
-      texts: [
-        { id: 't6-1', text: 'January 2026 — Six months strong.', date: 'January 2026' },
-      ]
+      texts: []
     },
   }
 
