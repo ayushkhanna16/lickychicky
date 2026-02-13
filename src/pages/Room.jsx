@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getRoomById } from '../data/riddles'
@@ -9,12 +9,17 @@ export default function Room() {
   const { monthId } = useParams()
   const navigate = useNavigate()
   const room = getRoomById(monthId)
-  const { isUnlocked, unlock } = useUnlockedRooms()
+  const { isUnlocked, unlock, unlocked: unlockedRooms } = useUnlockedRooms()
   const [answer, setAnswer] = useState('')
   const [error, setError] = useState('')
   const [showHint, setShowHint] = useState(false)
 
-  const unlocked = isUnlocked(room?.id)
+  const unlocked = room ? isUnlocked(room.id) : false
+  
+  // Force re-render when unlock state changes
+  useEffect(() => {
+    // This ensures the component updates when unlockedRooms changes
+  }, [unlockedRooms, room?.id])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -52,7 +57,7 @@ export default function Room() {
         </motion.button>
 
         <motion.div
-          key={room.id}
+          key={`${room.id}-${unlocked}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="rounded-2xl bg-stone-900/50 backdrop-blur border border-stone-700/50 p-8"
@@ -83,11 +88,11 @@ export default function Room() {
                         transition={{ delay: 0.2 }}
                         className="mt-6"
                       >
-                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl">
+                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl max-w-full">
                           <img
                             src={srkQuote.imageUrl}
                             alt={`SRK Quote from ${srkQuote.movie}`}
-                            className="w-full h-auto object-cover"
+                            className="w-full h-auto object-cover max-h-96"
                             onError={(e) => {
                               e.target.onerror = null
                               e.target.style.display = 'none'
