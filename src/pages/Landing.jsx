@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const NAMES = 'Ayush & Pallavi'
-const ANNIVERSARY_DATE = 'August 2025 - February 2026'
+const ANNIVERSARY_DATE = 'August 2025 - August 2026'
 
 const HEARTS = ['❤️', '💕', '💗', '💖', '💝', '🤍', '❤️', '💕']
 const MUSIC_NOTES = ['♪', '♫', '♬', '♪', '♫', '♬', '♪', '♫']
@@ -143,7 +143,7 @@ export default function Landing() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.6 }}
             >
-              6 Months of Us
+              1 Year and Change (A Whole Lot in Us)
             </motion.span>
             <motion.span
               initial={{ opacity: 0, x: 20 }}
