@@ -98,7 +98,7 @@ export default function Admin() {
           {/* Progress */}
           <div className="bg-stone-800/50 backdrop-blur border border-stone-700 rounded-xl p-6">
             <h2 className="text-xl text-white mb-4">
-              Progress: {unlocked.length}/6 months unlocked
+              Progress: {unlocked.length}/13 months unlocked
             </h2>
             <div className="space-y-3">
               {ROOMS.map(room => (

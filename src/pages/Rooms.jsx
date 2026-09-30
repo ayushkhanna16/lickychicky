@@ -69,17 +69,17 @@ export default function Rooms() {
         >
           <div className="flex justify-between items-center mb-2">
             <h1 className="font-display text-3xl md:text-4xl text-white font-semibold">
-              Six Months
+              One Year and Change
             </h1>
             <span className="text-amber-200/95 font-medium">
-              {unlockedCount}/6 unlocked
+              {unlockedCount}/13 unlocked
             </span>
           </div>
           <div className="h-2 rounded-full bg-white/20 overflow-hidden">
             <motion.div
               className="h-full rounded-full bg-gradient-to-r from-amber-400 to-pink-400"
               initial={{ width: 0 }}
-              animate={{ width: `${(unlockedCount / 6) * 100}%` }}
+              animate={{ width: `${(unlockedCount / 13) * 100}%` }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
             />
           </div>
