@@ -64,6 +64,83 @@ export const ROOMS = [
     hint: 'An American muscle car, often with a galloping horse logo.',
     srkQuote: '',
     adminAnswer: 'Mustang'
+  },
+  {
+    id: 'month7',
+    month: 7,
+    title: 'February 2026',
+    subtitle: 'Nourishing Body and Soul',
+    riddle: 'What healthy meal delivery service did we use during our detox?',
+    answer: 'sakara',
+    hint: 'A plant-based, organic meal delivery brand.',
+    srkQuote: '',
+    adminAnswer: 'Sakara'
+  },
+  {
+    id: 'month8',
+    month: 8,
+    title: 'March 2026',
+    subtitle: 'Under One Roof',
+    riddle: 'What was the first meal you cooked for me when we lived together?',
+    answer: 'kala chana',
+    hint: 'A traditional Indian black chickpea dish.',
+    srkQuote: '',
+    adminAnswer: 'Kala Chana'
+  },
+  {
+    id: 'month9',
+    month: 9,
+    title: 'April 2026',
+    subtitle: 'New Beginnings, New Path',
+    riddle: 'Where did the man go?',
+    answer: 'jai ho',
+    hint: 'An Oscar-winning Bollywood song title.',
+    srkQuote: '',
+    adminAnswer: 'Jai Ho'
+  },
+  {
+    id: 'month10',
+    month: 10,
+    title: 'May 2026',
+    subtitle: 'Tropical Paradise Together',
+    riddle: 'Where did we go where I say we went to heart rock?',
+    answer: 'arch rock',
+    hint: 'A natural rock formation in Hawaii.',
+    srkQuote: '',
+    adminAnswer: 'Arch Rock'
+  },
+  {
+    id: 'month11',
+    month: 11,
+    title: 'June 2026',
+    subtitle: 'Chase-ing Love and Dreams',
+    riddle: 'Chase-ing Who?',
+    answer: 'diljeet',
+    hint: 'A Bollywood star we were celebrating.',
+    srkQuote: '',
+    adminAnswer: 'Diljeet'
+  },
+  {
+    id: 'month12',
+    month: 12,
+    title: 'July 2026',
+    subtitle: 'Singing into Another Year',
+    riddle: 'What was the song I first sang for you?',
+    answer: 'you are my soniya',
+    hint: 'A classic romantic song.',
+    srkQuote: '',
+    adminAnswer: 'You Are My Soniya'
+  },
+  {
+    id: 'month13',
+    month: 13,
+    title: 'August 2026',
+    subtitle: 'A Year of Forever',
+    riddle: 'What were the couple sitting next to us at our anniversary dinner?',
+    answer: 'gay',
+    hint: 'A descriptor for the couple we met.',
+    srkQuote: '',
+    adminAnswer: 'Gay'
   }
 ]
 
