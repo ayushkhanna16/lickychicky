@@ -88,17 +88,19 @@ export default function Room() {
                         transition={{ delay: 0.2 }}
                         className="mt-6"
                       >
-                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl max-w-full">
-                          <img
-                            src={srkQuote.imageUrl}
-                            alt={`SRK Quote from ${srkQuote.movie}`}
-                            className="w-full h-auto object-cover max-h-96"
-                            onError={(e) => {
-                              e.target.onerror = null
-                              e.target.style.display = 'none'
-                            }}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6">
+                        <div className="relative rounded-xl overflow-hidden border-2 border-amber-400/30 shadow-xl max-w-full min-h-48">
+                          {srkQuote.imageUrl && (
+                            <img
+                              src={srkQuote.imageUrl}
+                              alt={`SRK Quote from ${srkQuote.movie}`}
+                              className="w-full h-auto object-cover max-h-96"
+                              onError={(e) => {
+                                e.target.onerror = null
+                                e.target.style.display = 'none'
+                              }}
+                            />
+                          )}
+                          <div className={`${srkQuote.imageUrl ? 'absolute inset-0' : 'relative'} bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6`}>
                             <p className="text-amber-200/95 text-lg md:text-xl italic font-cinematic leading-relaxed mb-2">
                               &ldquo;{srkQuote.quote}&rdquo;
                             </p>
