@@ -65,7 +65,12 @@ export function getMemoriesForMonth(monthId) {
       texts: []
     },
     month6: {
-      photos: [],
+      photos: [
+        { id: 'p6-1', url: `${BASE}/month6/photos/3B0A92EB-4E39-4607-A06C-E557FE322BB6_1_102_o.jpeg`, caption: '' },
+        { id: 'p6-2', url: `${BASE}/month6/photos/6408E66A-1F1E-4B8C-B0E6-BD903F6AB8BA_1_102_o.jpeg`, caption: '' },
+        { id: 'p6-3', url: `${BASE}/month6/photos/6F3B4E45-2B60-4EFD-BA2C-66C166E5A6ED_1_102_o.jpeg`, caption: '' },
+        { id: 'p6-4', url: `${BASE}/month6/photos/B1D32555-DECB-4D8D-93BD-C33F7D2F13BD_1_102_o.jpeg`, caption: '' },
+      ],
       videos: [],
       voiceNotes: [],
       texts: []
