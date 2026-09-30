@@ -12,8 +12,8 @@ dist
 dist-ssr
 *.local
 
-# Media (keep local / use LFS if needed)
-public/media/
+# Media - committed to git for Vercel deployment
+# public/media/
 public/pallavi-anniversary/
 
 # Editor directories and files
