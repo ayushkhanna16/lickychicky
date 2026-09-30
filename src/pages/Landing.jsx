@@ -123,7 +123,7 @@ export default function Landing() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            Happy Valentine's Day, My Love
+            Happy Anniversary, My Love
           </motion.p>
           <motion.h1
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white drop-shadow-lg mb-2 flex flex-wrap items-center justify-center gap-2 sm:gap-3"
